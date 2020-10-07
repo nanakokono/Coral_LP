@@ -1,0 +1,127 @@
+/* black:#3E3D48, primary: #F9665A */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #FAF9F7;
+  color: #3D3D48;
+  font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+}
+
+h1, h2, h3, p, span, a, figure {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-decoration: none;
+  color: #3E3D48;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  width: calc(100% - 8vw);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 4vw;
+  z-index: 3;
+}
+
+.logo {
+  margin-top: 0.69vw;
+  width: 12vw;
+  min-width: 140px;
+}
+
+header > a {
+  display: flex;
+  align-items: center;
+  padding: 16px 30px 20px;
+  border-radius: 40px;
+  border: 2px solid #F9665A;
+  font-weight: 600;
+  color: #F9665A;
+  background: #FFFFFF;
+}
+
+header > a > span {
+  display: inline-block;
+  margin-right: 10px;
+  color: #F9665A;
+}
+
+.mv {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 80px 6vw;
+  position: relative;
+  z-index: 1;
+}
+
+.mv_image {
+  width: 54%;
+  margin-left: -10vw;
+}
+
+.mv_text {
+  max-width: 600px;
+  width: 48%;
+  margin-top: 8vw;
+  margin-right: 3vw;
+}
+
+.appstore {
+  display: block;
+  margin-top: 3vw;
+  width: 12vw;
+}
+
+.discription {
+  position: absolute;
+  z-index: 2;
+  margin-top: -15vw;
+  padding: 12vw 0;
+  background: #ffffff;
+}
+
+.wave {
+  position: relative;
+  width: 160%;
+  top: -36vw;
+  left: -36vw;
+}
+
+.discription-wrapper {
+  margin-top: -37vw;
+  padding: 0 12vw;
+}
+
+.discription-wrapper h3 {
+  letter-spacing: 0.15em;
+  font-size: 23px;
+  line-height: 2.4em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.discription-wrapper h3 span {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.discription-wrapper p {
+  margin-top: 5vw;
+  letter-spacing: 0.1em;
+  font-size: 15px;
+  line-height: 2.5em;
+  font-weight: 500;
+  text-align: center;
+}
