@@ -8,7 +8,7 @@ html, body {
   font-family: 'Poppins', 'Noto Sans JP', sans-serif;
 }
 
-h1, h2, h3, p, span, a, figure {
+h1, h2, h3, p, span, a, figure, ul, li, div, figure {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -49,12 +49,61 @@ header > a {
   font-weight: 600;
   color: #F9665A;
   background: #FFFFFF;
+  box-shadow: 0 8px 40px rgba(249,102,90,0.1);
+}
+
+.sp-only {
+  display: none;
 }
 
 header > a > span {
   display: inline-block;
   margin-right: 10px;
   color: #F9665A;
+}
+
+@media screen and (max-width: 1020px) {
+  .sp-only {
+    display: block;
+  }
+
+  .pc-only {
+    display: none;
+  }
+
+  .logo {
+    width: 10vw;
+  }
+
+  header {
+    padding: 20px 5vw;
+  }
+
+  header > a {
+    font-size: 14px;
+    padding: 12px 16px 16px;
+  }
+
+  header > a > .material-icons {
+    margin-right: 4px;
+    margin-top: 4px;
+    font-size: 20px;
+    vertical-align: -5px;
+  }
+}
+
+.wave-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  width: 160%;
+  bottom: 3vw;
+  left: -36vw;
+  z-index: 2;
 }
 
 .mv {
@@ -74,54 +123,302 @@ header > a > span {
 .mv_text {
   max-width: 600px;
   width: 48%;
-  margin-top: 8vw;
+  margin-top: 7vw;
   margin-right: 3vw;
 }
 
 .appstore {
   display: block;
-  margin-top: 3vw;
+  margin-top: 2.5vw;
   width: 12vw;
 }
 
-.discription {
-  position: absolute;
-  z-index: 2;
-  margin-top: -15vw;
-  padding: 12vw 0;
-  background: #ffffff;
+@media screen and (max-width: 1020px) {
+  .mv {
+    display: block;
+    padding: 26vw 8vw;
+  }
+
+  .mv_text {
+    width: 100%;
+  }
+
+  .mv_image {
+    margin-top: -10px;
+    margin-left: -28.5vw;
+    width: 140%;
+  }
+
+  .appstore {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .appstore img {
+    width: 50%;
+  }
+
+  .wave {
+    bottom: 100vw;
+  }
 }
 
-.wave {
+.discription {
   position: relative;
-  width: 160%;
-  top: -36vw;
-  left: -36vw;
+  margin-top: -4vw;
+  padding: 0 0 12vw;
+  background: #ffffff;
+  z-index: 2;
 }
 
 .discription-wrapper {
-  margin-top: -37vw;
   padding: 0 12vw;
 }
 
-.discription-wrapper h3 {
+.discription-wrapper h1 {
   letter-spacing: 0.15em;
-  font-size: 23px;
+  font-size: 24px;
   line-height: 2.4em;
   font-weight: 500;
   text-align: center;
 }
 
-.discription-wrapper h3 span {
+.discription-wrapper h1 span {
+  position: relative;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 28px;
+}
+
+.discription-wrapper h1 span::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  width: 100%;
+  height: 20px;
+  background-color: #F9665A;
+  opacity: 0.3;
+  mix-blend-mode: multiply;
 }
 
 .discription-wrapper p {
-  margin-top: 5vw;
+  margin-top: 6vw;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  line-height: 2.5em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.discription-wrapper p + p {
+  position: relative;
+}
+
+.discription-wrapper p + p::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: 50%;
+  top: -3.5vw;
+  transform: translateX(-50%);
+  background-color: #F9665A;
+  border-radius: 20px;
+}
+
+.discription-wrapper p span {
+  position: relative;
+}
+
+.discription-wrapper p span::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #F9665A;
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 1020px) {
+  .discription {
+    margin-top: -102vw;
+  }
+
+  .discription-wrapper {
+    padding: 10vw 8vw;
+  }
+
+  .discription-wrapper h1 {
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 0.1em;
+  }
+
+  .discription-wrapper h1 span {
+    font-size: 20px;
+  }
+
+  .discription-wrapper h1 span::before {
+    display: none;
+  }
+
+  .discription-wrapper p {
+    margin-top: 40px;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    line-height: 2.5em;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .discription-wrapper p span {
+    font-size: 14px;
+  }
+
+  .discription-wrapper p + p::before {
+    top: -6.5vw;
+  }
+}
+
+.merits {
+  padding: 12vw 4vw 0;
+}
+
+.merits h2 {
+  letter-spacing: 0.15em;
+  font-size: 32px;
+  line-height: 2.4em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.merits ul {
+  margin-top: 6vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.merit {
+  width: 35%;
+  text-align: center;
+}
+
+.merit + .merit {
+  margin-left: 30px;
+}
+
+.merit span {
+  font-weight: 200;
+  font-size: 2.8vw;
+}
+
+.merit h3 {
+  margin-top: 1.5vw;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+}
+
+.merit h3 span {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.merit p {
+  margin-top: 1vw;
   letter-spacing: 0.1em;
   font-size: 15px;
-  line-height: 2.5em;
-  font-weight: 500;
-  text-align: center;
+  height: 46px;
+}
+
+.merit figure {
+  margin-left: -2.7vw;
+  width: 100%;
+}
+
+.last {
+  margin-top: -10px;
+  position: relative;
+  padding: 12vw 6vw;
+  background-color: #FA7D73;
+  overflow: hidden;
+}
+
+.last h2 {
+  font-size: 4vw;
+  color: white;
+}
+
+.last a {
+  margin-top: 3vw;
+  margin-left: 2vw;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  line-height: 9vw;
+  border-radius: 9vw;
+  font-weight: 600;
+  font-size: 1.8vw;
+  color: #F9665A;
+  background: #FFFFFF;
+  box-shadow: 0 8px 40px rgba(249,102,90,0.1);
+}
+
+.last .material-icons {
+  font-size: 2.8vw;
+  color: #F9665A;
+}
+
+.last figure {
+  width: 60vw;
+  position: absolute;
+  top: -15vw;
+  right: -5vw;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 12vw 9vw;
+  background-color: #272729;
+  font-size: 13px;
+}
+
+footer .appstore{
+  margin-top: 20px;
+  width: 9vw;
+}
+
+footer ul li {
+  display: flex;
+}
+
+footer .footer-info {
+  margin-top: 1vw;
+  width: 50%;
+}
+
+.footer-info h3,
+.footer-info p,
+.footer-info a {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 200;
+  opacity: 0.9;
+}
+
+.footer-info li + li{
+  margin-top: 20px;
+}
+
+.footer-info h3 {
+  width: 150px;
+}
+
+.footer-info a {
+  margin-right: 20px;
+  text-decoration: underline;
 }
