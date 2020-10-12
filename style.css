@@ -199,7 +199,7 @@ header > a > span {
   position: relative;
   font-weight: 600;
   font-size: 28px;
-  background: linear-gradient(transparent 60%, #F9CBC7 30%);
+  background: linear-gradient(transparent 60%, #FFC5BF 30%);
   display: inline;
   padding: 0 2px 4px;
 }
@@ -218,7 +218,7 @@ header > a > span {
 }
 
 .discription-wrapper p span {
-  background: linear-gradient(transparent 92%, #F9CBC7 30%);
+  background: linear-gradient(transparent 92%, #FFC5BF 30%);
   display: inline;
   padding: 0 2px 4px;
 }
