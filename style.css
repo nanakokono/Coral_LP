@@ -135,7 +135,7 @@ header > a > span {
 @media screen and (max-width: 1020px) {
   .mv {
     display: block;
-    padding: 88px 6vw;
+    padding: 80px 6vw;
   }
 
   .mv_text {
