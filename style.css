@@ -403,7 +403,7 @@ header > a > span {
   font-size: 1.8vw;
   color: #F9665A;
   background: #FFFFFF;
-  box-shadow: 0 8px 40px rgba(249,102,90,0.1);
+  border: 2px solid #F9665A;
 }
 
 .last .material-icons {
