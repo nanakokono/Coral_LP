@@ -15,7 +15,7 @@
    <meta property="og:site_name" content="マインドフル瞑想アプリ Coral(コーラル)" />
    <meta property="og:locale" content="ja_JP" />
    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="style.css">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="icon" href="assets/favicon.ico">
@@ -23,8 +23,6 @@
    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
    <!-- [endif] -->
-   <script src="path/to/luxy.js" charset="utf-8"></script>
-   <script src="main.js"></script>
  </head>
  <body>
  <!----- header----->
@@ -34,11 +32,11 @@
       <img src="assets/logo.svg" alt="Coral(コーラル) おうちでととのえる マインドフルネス瞑想アプリ">
     </div>
    </h1>
-   <a href="#" class="pc-only">
+   <a href="https://apps.apple.com/jp/app/coral/id1501829848" class="pc-only" target="_blank">
      <span class="material-icons">vertical_align_bottom</span>
      iOSアプリをダウンロード
    </a>
-   <a href="#" class="sp-only">
+   <a href="https://apps.apple.com/jp/app/coral/id1501829848" class="sp-only" target="_blank">
      <span class="material-icons">vertical_align_bottom</span>
      ダウンロード
    </a>
@@ -48,27 +46,28 @@
      <div class="mv">
        <div class="mv_text">
          <img src="assets/mv_text.png" alt="睡眠・パフォーマンス・ストレスで悩むあなたへ | おうちでととのえる マインドフルネス瞑想アプリ">
-         <a class="appstore pc-only" href="#">
+         <a class="appstore pc-only" href="https://apps.apple.com/jp/app/coral/id1501829848"  target="_blank">
            <img src="assets/appstore.png" alt="App Storeからダウンロード">
          </a>
        </div>
        <figure class="mv_image">
-         <img src="assets/mv_image.png" alt="">
+         <img src="assets/mv_image.png" alt="Coralプロダクト画面：瞑想で7分間、整いました。">
        </figure>
      </div>
      <div class="wave">
-       <img src="assets/white_wave.png" alt="">
+       <img src="assets/white_wave.png" alt="装飾">
      </div>
    </div>
    <div class="discription">
      <div class="discription-wrapper">
+       <span class="title">About</span>
        <h1>Coral（コーラル）は、<br>
-         忙しい毎日を過ごすあなたのためにつくられた<br class="sp-on">
+         忙しい毎日を過ごすあなたのための<br class="pc-only">
          <span>「おうちでととのえる マインドフルネス瞑想アプリ」</span>です。
        </h1>
        <p>
-         睡眠・仕事のパフォーマンス・ストレス・感情の浮きしずみ など、<br>
-         <span>こころとからだのケア</span>をしたいあなたに、<br>
+         睡眠・仕事のパフォーマンス・ストレス・感情の浮きしずみ など、<br class="pc-only">
+         <span>こころとからだのケア</span>をしたいあなたに、<br class="pc-only">
          日常のあらゆるシーンにあわせた『ととのえる体験』を用意しています。<br>
        </p>
        <p>
@@ -80,6 +79,7 @@
      </div>
    </div>
    <div class="merits">
+     <span class="title">Coral is for...</span>
      <h2>Coralはこんな方におすすめ</h2>
      <ul>
        <li class="merit">
@@ -95,7 +95,7 @@
          <h3><span>仕事に集中</span>できない</h3>
          <p>集中力を高め、常に最高のパフォーマンスを。</p>
          <figure>
-           <img src="assets/merit2.png" alt="2 睡眠に特化したガイドで、睡眠改善。">
+           <img src="assets/merit2.png" alt="2 集中力を高め、常に最高のパフォーマンスを。">
          </figure>
        </li>
        <li class="merit">
@@ -109,9 +109,10 @@
      </ul>
    </div>
    <div class="last">
+     <span class="title">Start Free</span>
      <h2>「ととのえる体験」を<br>
        　はじめよう
-       <a href="#">
+       <a href="https://apps.apple.com/jp/app/coral/id1501829848" target="_blank">
          無料ではじめる
          <span class="material-icons">arrow_forward</span>
        </a>
@@ -122,9 +123,11 @@
    </div>
  </main>
  <footer>
-   <div class="logo">
-     <img src="assets/logo_white.svg" alt="Coral(コーラル) おうちでととのえる マインドフルネス瞑想アプリ">
-     <a class="appstore" href="#">
+   <div class="logo_wrapper">
+     <div class="logo">
+       <img src="assets/logo_white.svg" alt="Coral(コーラル) おうちでととのえる マインドフルネス瞑想アプリ">
+     </div>
+     <a class="appstore" href="https://apps.apple.com/jp/app/coral/id1501829848" target="_blank">
        <img src="assets/appstore.png" alt="App Storeからダウンロード">
      </a>
    </div>
@@ -136,7 +139,7 @@
        </li>
        <li>
          <h3>お問い合わせ先</h3>
-         <p>info@havana.jp</p>
+         <a type="mail" href="mailto:info&#64;havana.jp">info@havana.jp</a>
        </li>
        <li>
           <a href="#">利用規約</a>
@@ -145,6 +148,5 @@
      </ul>
    </div>
  </footer>
- <!----- /footer ----->
  </body>
 </html>

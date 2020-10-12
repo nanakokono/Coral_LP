@@ -5,7 +5,7 @@ html, body {
   padding: 0;
   background: #FAF9F7;
   color: #3D3D48;
-  font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+  font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
 }
 
 h1, h2, h3, p, span, a, figure, ul, li, div, figure {
@@ -49,7 +49,6 @@ header > a {
   font-weight: 600;
   color: #F9665A;
   background: #FFFFFF;
-  box-shadow: 0 8px 40px rgba(249,102,90,0.1);
 }
 
 .sp-only {
@@ -80,8 +79,9 @@ header > a > span {
   }
 
   header > a {
+    margin-top: -8px;
     font-size: 14px;
-    padding: 12px 16px 16px;
+    padding: 8px 16px 12px;
   }
 
   header > a > .material-icons {
@@ -100,8 +100,8 @@ header > a > span {
 
 .wave {
   position: absolute;
-  width: 160%;
-  bottom: 3vw;
+  width: 150%;
+  bottom: 6vw;
   left: -36vw;
   z-index: 2;
 }
@@ -121,7 +121,6 @@ header > a > span {
 }
 
 .mv_text {
-  max-width: 600px;
   width: 48%;
   margin-top: 7vw;
   margin-right: 3vw;
@@ -136,7 +135,7 @@ header > a > span {
 @media screen and (max-width: 1020px) {
   .mv {
     display: block;
-    padding: 26vw 8vw;
+    padding: 88px 6vw;
   }
 
   .mv_text {
@@ -144,13 +143,13 @@ header > a > span {
   }
 
   .mv_image {
-    margin-top: -10px;
-    margin-left: -28.5vw;
+    margin-top: -24px;
+    margin-left: -29.5vw;
     width: 140%;
   }
 
   .appstore {
-    margin-top: 20px;
+    margin-top: 16px;
     width: 100%;
     text-align: center;
   }
@@ -164,21 +163,33 @@ header > a > span {
   }
 }
 
+.title {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  font-size: 14px;
+  color: #F9665A;
+}
+
+.title + * {
+  margin-top: 3vw;
+}
+
 .discription {
   position: relative;
-  margin-top: -4vw;
-  padding: 0 0 12vw;
+  margin-top: -8vw;
   background: #ffffff;
   z-index: 2;
 }
 
 .discription-wrapper {
-  padding: 0 12vw;
+  padding: 0 12vw 12vw;;
 }
 
 .discription-wrapper h1 {
   letter-spacing: 0.15em;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 2.4em;
   font-weight: 500;
   text-align: center;
@@ -188,17 +199,9 @@ header > a > span {
   position: relative;
   font-weight: 600;
   font-size: 28px;
-}
-
-.discription-wrapper h1 span::before {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  width: 100%;
-  height: 20px;
-  background-color: #F9665A;
-  opacity: 0.3;
-  mix-blend-mode: multiply;
+  background: linear-gradient(transparent 60%, #F9CBC7 30%);
+  display: inline;
+  padding: 0 2px 4px;
 }
 
 .discription-wrapper p {
@@ -211,63 +214,47 @@ header > a > span {
 }
 
 .discription-wrapper p + p {
-  position: relative;
-}
-
-.discription-wrapper p + p::before {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  left: 50%;
-  top: -3.5vw;
-  transform: translateX(-50%);
-  background-color: #F9665A;
-  border-radius: 20px;
+  margin-top: 3vw;
 }
 
 .discription-wrapper p span {
-  position: relative;
-}
-
-.discription-wrapper p span::before {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  width: 100%;
-  height: 2px;
-  background-color: #F9665A;
-  opacity: 0.3;
+  background: linear-gradient(transparent 92%, #F9CBC7 30%);
+  display: inline;
+  padding: 0 2px 4px;
 }
 
 @media screen and (max-width: 1020px) {
+  .title {
+    font-size: 12px;
+  }
+
+  .title + * {
+    margin-top: 24px;
+  }
+
   .discription {
     margin-top: -102vw;
   }
 
   .discription-wrapper {
-    padding: 10vw 8vw;
+    padding: 20px 6vw 80px;
   }
 
   .discription-wrapper h1 {
-    font-size: 18px;
-    text-align: left;
-    letter-spacing: 0.1em;
+    font-size: 19px;
+    letter-spacing: 0.05em;
+    line-height: 2.2;
   }
 
   .discription-wrapper h1 span {
     font-size: 20px;
   }
 
-  .discription-wrapper h1 span::before {
-    display: none;
-  }
-
   .discription-wrapper p {
     margin-top: 40px;
-    letter-spacing: 0.1em;
-    font-size: 14px;
-    line-height: 2.5em;
+    letter-spacing: 0.05em;
+    font-size: 15px;
+    line-height: 2.3em;
     font-weight: 400;
     text-align: left;
   }
@@ -294,7 +281,7 @@ header > a > span {
 }
 
 .merits ul {
-  margin-top: 6vw;
+  margin-top: 5vw;
   display: flex;
   justify-content: space-between;
 }
@@ -333,17 +320,69 @@ header > a > span {
 }
 
 .merit figure {
-  margin-left: -2.7vw;
-  width: 100%;
+  margin: 2vw auto 0;
+  width: 80%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1020px) {
+  .merits {
+    padding: 80px 6vw 0;
+  }
+
+  .merits h2 {
+    letter-spacing: 0.15em;
+    font-size: 20px;
+  }
+
+  .merit{
+    margin-top: 48px;
+    width: 100%;
+  }
+
+  .merit span {
+    font-size: 24px;
+  }
+
+  .merit + .merit {
+    margin-left: 0;
+  }
+
+  .merits ul {
+    display: block;
+  }
+
+  .merit h3 {
+    margin-top: 16px;
+  }
+
+  .merit h3 span {
+    font-size: 22px;
+  }
+
+  .merit p {
+    height: auto;
+    margin-top: 12px;
+  }
+
+  .merit figure {
+    margin-top: 24px;
+  }
 }
 
 .last {
-  margin-top: -10px;
   position: relative;
-  padding: 12vw 6vw;
+  margin-top: -10px;
+  padding: 12vw 6vw 14vw;
   background-color: #FA7D73;
   overflow: hidden;
 }
+
+  .last .title {
+    margin-left: 2vw;
+    text-align: left;
+    color: #FFFFFF;
+  }
 
 .last h2 {
   font-size: 4vw;
@@ -351,7 +390,7 @@ header > a > span {
 }
 
 .last a {
-  margin-top: 3vw;
+  margin-top: 2vw;
   margin-left: 2vw;
   width: 20vw;
   display: flex;
@@ -379,12 +418,57 @@ header > a > span {
   right: -5vw;
 }
 
+@media screen and (max-width: 1020px) {
+
+  .last {
+    padding: 80px 6vw;
+  }
+
+  .last .title {
+    text-align: left;
+  }
+
+  .last h2 {
+    position: relative;
+    font-size: 28px;
+    color: white;
+    z-index: 2;
+  }
+
+  .last a {
+    position: relative;
+    margin-top: 24px;
+    width: 80%;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 32px;
+    line-height: auto;
+    border-radius: 100px;
+    font-size: 16px;
+    z-index: 2;
+  }
+
+  .last .material-icons {
+    font-size: 20px;
+    color: #F9665A;
+  }
+
+  .last figure {
+    width: 80vw;
+    position: absolute;
+    top: 3vw;
+    right: -24vw;
+    z-index: 1;
+  }
+}
+
 footer {
   display: flex;
   justify-content: space-between;
   padding: 12vw 9vw;
   background-color: #272729;
-  font-size: 13px;
 }
 
 footer .appstore{
@@ -421,4 +505,32 @@ footer .footer-info {
 .footer-info a {
   margin-right: 20px;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1020px) {
+  footer {
+    display: block;
+    justify-content: space-between;
+    padding: 80px 6vw 100px;
+  }
+
+  footer .logo_wrapper {
+    display: flex;
+    justify-content:space-between;
+  }
+
+  footer .appstore {
+    margin-top: -3px;
+    margin-left: 10.6vw;
+    width: 120px;
+  }
+
+  footer .appstore img {
+    width: 100%;
+  }
+
+  footer .footer-info {
+    margin-top: 40px;
+    width: 100%;
+  }
 }
